@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "首页",
+    "usingComponents": {
+        "smt-icon": "dynamicLib://smartUI/smt-icon",
+        "bottom-cards": "components/bottom/bottom.swan"
+    }
+}

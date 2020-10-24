@@ -1,0 +1,78 @@
+<!-- index.swan -->
+<view class="container">
+    <view class="body-top">
+        <view class="cherp-up {{isCherp ? 'click-style' : ''}}" bindtap="cherpUp">
+            加油，打工人
+        </view>
+        <view class="deep-water {{!isCherp ? 'click-style' : ''}}" bindtap="deepWater" >
+            职场深水区
+        </view>
+    </view>
+    <view class="body-content">
+        <view class="top-content-more">
+            <view>推荐话题</view>
+            <view>更多</view>
+        </view>
+        <view class="toptic-container">
+            <view s-for="topicElement,index in topics" class="topic-container">
+                <view>{{topicElement.topicItem}}</view>
+                <view>{{topicElement.persons}}人次参与</view>
+            </view>
+        </view>
+        <view class="topic-content-container" s-for="persontElement,index in personList">
+            <view class="pic-name-guanzhu">
+                <view class="picture-name">
+                    <image
+                        src=""
+                        mode="widthFix"
+                        class="person-image"
+                    >
+                    PIC
+                    </image>
+                    <view class="name-time">
+                        <view class="font-weight-500">{{persontElement.name}}</view>
+                        <view>{{persontElement.time}}</view>
+                    </view>
+                </view>
+                <view class="guanzhu">+ 关注</view>
+            </view>
+            <view class="toptic-content">
+                {{persontElement.topicConent}}
+            </view>
+            <view>
+                如果有图片这里是图片的列表
+            </view>
+            <view class="function-are">
+                <view class="function-area-element">
+                    <smt-icon name="share" class="smt-icon-left" color="#929191" size="34rpx" />
+                    <view>转发</view>
+                </view>
+                <view class="function-area-element">
+                    <smt-icon name="message" class="smt-icon-left" color="#929191" size="34rpx" />
+                    <view>评论</view>
+                </view>
+                <view class="function-area-element">
+                    <smt-icon name="thumb-up" class="smt-icon-left" color="#929191" size="34rpx" />
+                    <view>赞</view>
+                </view>
+                <view class="function-area-element">
+                    <smt-icon name="thumb-down" class="smt-icon-left" color="#929191" size="34rpx" />
+                    <view>踩</view>
+                </view>
+            </view>
+            <view>
+                <text class="comment-name">{{persontElement.comments[0].name}}:</text>
+                {{persontElement.comments[0].content}}
+            </view>
+        </view>
+    </view>
+    <view class="body-bottom">
+        <!-- <bottom-cards> -->
+        <view>社区</view>
+        <view>关注</view>
+        <view>+</view>
+        <view>消息</view>
+        <view>我的</view>
+        <!-- </bottom-cards> -->
+    </view>
+</view>

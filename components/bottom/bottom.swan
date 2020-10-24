@@ -1,0 +1,5 @@
+<!-- 组件内部模板 -->
+<view class="wrapper">
+    <view>组件内部节点</view>
+    <slot></slot>
+</view>
