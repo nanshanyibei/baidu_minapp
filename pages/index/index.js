@@ -45,5 +45,20 @@ Page({
         this.setData({
             isCherp: false
         })
+    },
+    toMyPage() {
+        swan.navigateTo({
+            url: '/pages/myPage/myPage'
+        });
+    },
+    toSubmit() {
+        swan.navigateTo({
+            url: '/pages/submitArticle/submitArticle'
+        })
+    },
+    toMessage() {
+        swan.navigateTo({
+            url: '/pages/messagePage/messagePage'
+        })
     }
 })

@@ -1,0 +1,38 @@
+<view class="my-page-container">
+    <view class="icon-container">
+        <view class="icon-element-container">
+            <smt-icon name="directory" class="smt-icon-left" color="#929191" size="70rpx" />
+            <view>待定</view>
+        </view>
+        <view class="icon-element-container">
+            <smt-icon name="like" class="smt-icon-left" color="#929191" size="70rpx" />
+            <view>点赞</view>
+        </view>
+        <view class="icon-element-container">
+            <smt-icon name="message" class="smt-icon-left" color="#929191" size="70rpx" />
+            <view>回复</view>
+        </view>
+        <view class="icon-element-container">
+            <smt-icon name="administrator" class="smt-icon-left" color="#929191" size="70rpx" />
+            <view>粉丝</view>
+        </view>
+    </view>
+    <view class="message-list-container">
+        <view class="message-element-container" s-for="message,index in messageList">
+            <image class="message-image" src="" mode="widthFix"></image>
+            <view class="name-value-container">
+                <view class="name">{{message.name}}</view>
+                <view>{{message.value}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="body-bottom">
+        <!-- <bottom-cards> -->
+        <view bindtap="toIndex">社区</view>
+        <view>关注</view>
+        <view>+</view>
+        <view>消息</view>
+        <view bindtap="toMyPage">我的</view>
+        <!-- </bottom-cards> -->
+    </view>
+</view>

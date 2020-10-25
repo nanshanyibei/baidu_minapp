@@ -1,0 +1,48 @@
+<view class="my-page-container">
+    <view class="top-cancel-submit-container">
+        <view bindtap="toIndex">取消</view>
+        <view class="words">发布动态</view>
+        <view bindtap="uploadFile">发布</view>
+    </view>
+    <view class="submit-area-container">
+        <text>发布选区：</text>
+        <text>TEST</text>
+    </view>
+    <view class="type-words-area">
+        <textarea
+            maxlength="-1"
+            auto-height
+            placeholder="今日份打工日记，建议发布系统情绪检测值大于0的内容，每天都要元气慢慢呀~"
+            bindinput="bindInput" />
+    </view>
+    <view class="mood-value-text">
+        <view class="mood-value-container">
+            打工日记情绪检测：
+            <text>{{moodValue}}</text>
+        </view>
+        <view class="value-to-check">
+            {{inputValue.length}}/500
+        </view>
+    </view>
+    <view>
+        <view class="card-area">
+            <view class="display-area">
+                <view s-if="{{filePath}}" bindtap="chooseImage">
+                    <image class="image-items" src="{{filePath}}" mode="aspectFit"></image>
+                </view>
+                <view s-else bindtap="chooseImage">
+                    <image class="img-choose" src="https://b.bdstatic.com/searchbox/icms/searchbox/img/plus.png"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="body-bottom">
+        <!-- <bottom-cards> -->
+        <view bindtap="toIndex">社区</view>
+        <view>关注</view>
+        <view>+</view>
+        <view bindtap="toMessage">消息</view>
+        <view bindtap="toMyPage">我的</view>
+        <!-- </bottom-cards> -->
+    </view>
+</view>

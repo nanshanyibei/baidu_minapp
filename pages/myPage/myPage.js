@@ -1,6 +1,14 @@
+const app = getApp();
+const USER_MESSAGE = {
+    username: '用户名',
+    guanzhu: 200,
+    fans: 100,
+    power: 200
+}
+
 Page({
     data: {
-
+        userMessage: USER_MESSAGE
     },
     onLoad: function () {
         // 监听页面加载的生命周期函数
@@ -25,5 +33,20 @@ Page({
     },
     onShareAppMessage: function () {
         // 用户点击右上角转发
+    },
+    toSubmit() {
+        swan.navigateTo({
+            url: '/pages/submitArticle/submitArticle'
+        })
+    },
+    toIndex() {
+        swan.navigateTo({
+            url: '/pages/index/index'
+        });
+    },
+    toMessage() {
+        swan.navigateTo({
+            url: '/pages/messagePage/messagePage'
+        })
     }
 });

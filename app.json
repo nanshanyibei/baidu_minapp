@@ -1,7 +1,9 @@
 {
     "pages": [
         "pages/index/index",
-        "pages/myPage/myPage"
+        "pages/myPage/myPage",
+        "pages/submitArticle/submitArticle",
+        "pages/messagePage/messagePage"
     ],
     "window": {
         "navigationBarBackgroundColor": "#ffffff",

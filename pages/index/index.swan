@@ -70,9 +70,9 @@
         <!-- <bottom-cards> -->
         <view>社区</view>
         <view>关注</view>
-        <view>+</view>
-        <view>消息</view>
-        <view>我的</view>
+        <view bindtap="toSubmit">+</view>
+        <view bindtap="toMessage">消息</view>
+        <view bindtap="toMyPage">我的</view>
         <!-- </bottom-cards> -->
     </view>
 </view>
