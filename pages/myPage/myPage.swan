@@ -2,7 +2,7 @@
     <view class="user-name-guanzhu-container">
         <image src="" class="name-image" mode="widthFix" binderror="" bindload=""></image>
         <view class="name-guanzhu-container">
-            <view class="username-words">{{userMessage.username}}</view>
+            <view class="username-words">{{username}}</view>
             <view class="guanzhu-fans">
                 <text>关注</text>{{userMessage.guanzhu}}
                 <text>粉丝</text>{{userMessage.fans}}
@@ -47,8 +47,8 @@
         <view bindtap="toIndex">社区</view>
         <view>关注</view>
         <view bindtap="toSubmit">+</view>
-        <view>消息</view>
-        <view>我的</view>
+        <view bindtap="toMessage">消息</view>
+        <view open-type="getUserInfo" bindtap="getUserInfo">我的</view>
         <!-- </bottom-cards> -->
     </view>
 </view>

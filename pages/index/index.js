@@ -60,5 +60,23 @@ Page({
         swan.navigateTo({
             url: '/pages/messagePage/messagePage'
         })
+    },
+    openShare() {
+        swan.openShare({
+            title: '智能小程序示例',
+            content: '世界很复杂，百度更懂你',
+            path: 'swan-api/open-share/open-share?key=value',
+            imageUrl: 'https://smartprogram.baidu.com/docs/img/logo_new.png',
+            success: res => {
+                swan.showToast({
+                    title: '分享成功',
+                    icon: 'none'
+                });
+                console.log('openShare success', res);
+            },
+            fail: err => {
+                console.log('openShare fail', err);
+            }
+        });
     }
 })

@@ -43,7 +43,7 @@
                 如果有图片这里是图片的列表
             </view>
             <view class="function-are">
-                <view class="function-area-element">
+                <view class="function-area-element" bindtap="openShare">
                     <smt-icon name="share" class="smt-icon-left" color="#929191" size="34rpx" />
                     <view>转发</view>
                 </view>

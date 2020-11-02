@@ -8,7 +8,10 @@ const USER_MESSAGE = {
 
 Page({
     data: {
-        userMessage: USER_MESSAGE
+        userMessage: USER_MESSAGE,
+        username: '用户名',
+        hasUserInfo: false,
+        canIUse: swan.canIUse('view.open-type.getUserInfo')
     },
     onLoad: function () {
         // 监听页面加载的生命周期函数
@@ -48,5 +51,12 @@ Page({
         swan.navigateTo({
             url: '/pages/messagePage/messagePage'
         })
+    },
+    getUserInfo(e) {
+        console.log('----e', e.detail.userInfo);
+        this.setData({
+            username: e.detail.userInfo,
+            hasUserInfo: true
+        });
     }
 });

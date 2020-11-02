@@ -9,14 +9,13 @@
     font-size: 28rpx;
 }
 .cherp-up, .deep-water {
-    margin: 0 10rpx;
-    border: 1rpx solid #929191;
-    padding: 4rpx 6rpx;
-    font-size: 26rpx;
+    margin: 0 50rpx;
+    padding: 4rpx 20rpx;
+    font-size: 36rpx;
 }
 .click-style {
-    background-color: #838181;
-    color: #ffffff;
+    color: rgb(7, 7, 139);
+    font-weight: bold;
 }
 .body-content {
     border-top: 1px solid #929191;
