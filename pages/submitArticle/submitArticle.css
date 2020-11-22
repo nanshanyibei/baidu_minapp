@@ -1,10 +1,6 @@
 .my-page-container{
     font-size: 28rpx;
 }
-.to-index-page-button {
-    width: 80rpx;
-    margin-left: 10rpx;
-}
 .to-submit-article-button {
     color: #ffffff;
     background-color: #66cccc;
@@ -16,14 +12,6 @@
     font-size: 28rpx;
     color: #575656;
     font-weight: 500;
-}
-.top-cancel-submit-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 20rpx 10rpx 10rpx 10rpx;
-    font-size: 34rpx;
-    border-bottom: 1rpx solid #66cccc;
-    padding-bottom: 10rpx;
 }
 .submit-area-container {
     display: flex;

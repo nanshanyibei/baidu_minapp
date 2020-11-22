@@ -1,5 +1,5 @@
 {
-    "navigationBarTitleText": "发帖",
+    "navigationBarTitleText": "发布动态",
     "usingComponents": {
         "smt-icon": "dynamicLib://smartUI/smt-icon"
     }

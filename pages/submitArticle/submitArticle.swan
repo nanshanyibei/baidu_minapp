@@ -1,15 +1,10 @@
 <view class="my-page-container">
-    <view class="top-cancel-submit-container">
-        <view class="to-index-page-button" bindtap="toIndex"><</view>
-        <view class="words">发布动态</view>
-        <view class="to-submit-article-button" bindtap="uploadFile">发布</view>
-    </view>
     <view class="submit-area-container">
         <view>
             <text class="to-submit-area">发布选区：</text>
             <text class="zhichang-pua-words">职场PUA</text>
         </view>
-        <view class="for-more">更多</view>
+        <view class="to-submit-article-button" bindtap="uploadFile">发布</view>
     </view>
     <view class="type-words-area">
         <textarea
