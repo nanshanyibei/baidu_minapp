@@ -11,10 +11,9 @@
 .cherp-up, .deep-water {
     margin: 0 50rpx;
     padding: 4rpx 20rpx;
-    font-size: 36rpx;
 }
 .click-style {
-    color: rgb(7, 7, 139);
+    border-bottom: 6rpx solid #66cccc;
     font-weight: bold;
 }
 .body-content {
@@ -23,11 +22,7 @@
 .top-content-more {
     display: flex;
     justify-content: space-between;
-}
-.top-content-more view {
-    width: fit-content;
-    color: #bebcbc;
-    margin: 6rpx 10rpx;
+    margin: 20rpx 0;
 }
 .toptic-container {
     display: flex;
@@ -37,16 +32,42 @@
     width: fit-content;
     margin: 10rpx;
     padding: 10rpx;
-    border: 1rpx solid #929191;
+    border-radius: 3rpx;
+    box-shadow: 3rpx 3rpx 10rpx -1rpx #66cccc;
 }
 .topic-content-container {
     margin: 0 10rpx;
+    border: 1px solid #e7e6e6;
+    box-shadow: 3rpx 3rpx 10rpx -1rpx #66cccc;
+    padding: 10rpx 20rpx;
+}
+.topic-container-item {
+    color: #66cccc;
+    font-weight: 500;
+}
+.topic-container-persons {
+    color: #929191;
+    font-size: 24rpx;
+}
+.top-content-pick-topic {
+    font-weight: 500;
+    color: #000000;
+    margin-left: 10rpx;
+}
+.top-content-for-more {
+    color: #999999;
+    margin-right: 10rpx;
+}
+.to-pick-content {
+    margin: 20rpx 10rpx;
+    color: #000000;
+    font-weight: 500;
 }
 .person-image {
     width: 80rpx;
     height: 80rpx;
     border-radius: 40rpx;
-    background-color: #ffcccc;
+    background-color: #66cccc;
 }
 .pic-name-guanzhu {
     display: flex;
@@ -65,9 +86,12 @@
     font-size: 24rpx;
 }
 .guanzhu {
-    border: 1px solid #929191;
-    padding: 4rpx 8rpx;
-    font-size: 28rpx;
+    border: 1px solid #66cccc;
+    padding: 4rpx 16rpx;
+    font-size: 20rpx;
+    border-radius: 30rpx;
+    background-color: #66cccc;
+    color: #ffffff;
 }
 .toptic-content {
     margin-top: 10rpx;
@@ -80,33 +104,49 @@
 .function-area-element {
     display: flex;
 }
+.function-area-element view {
+    color: #999999;
+    font-size: 24rpx;
+}
 .smt-icon-left {
     margin-right: 4rpx;
 }
 .comment-name {
-    font-weight: bold;
-}
-.comment-name {
     margin-right: 10rpx;
+    color: #000000;
 }
+.genuis-comment {
+    color: #999999;
+    font-size: 26rpx;
+}
+
 
 
 
 .body-bottom {
     position: fixed;
-    bottom: 15rpx;
-    height: 30rpx;
+    height: 80rpx;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 10rpx 5rpx;
+    border: 1px solid #66cccc;
+    padding-top: 10rpx;
 }
 .body-bottom view {
     width: 100rpx;
-    background-color: #929191;
-    color: #ffffff;
+    color: #999999;
     line-height: 30rpx;
     text-align: center;
-    padding: 10rpx 20rpx;
     height: 30rpx;
+    font-size: 24rpx;
+}
+.body-bottom .current-page {
+    color: #66cccc;
+}
+.body-bottom .tosubmit-smt-icon {
+    width: 40rpx;
+    height: 40rpx;
+    background-color: #66cccc;
+    border: 20rpx;
 }

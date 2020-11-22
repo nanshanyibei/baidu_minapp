@@ -28,6 +28,11 @@ Page({
             url: '/pages/index/index'
         });
     },
+    toSubmit() {
+        swan.navigateTo({
+            url: '/pages/submitArticle/submitArticle'
+        })
+    },
     toMyPage() {
         swan.navigateTo({
             url: '/pages/myPage/myPage'

@@ -1,17 +1,49 @@
 .my-page-container{
-    font-size: 34rpx;
-    margin: 0 10rpx;
+    font-size: 28rpx;
+}
+.to-index-page-button {
+    width: 80rpx;
+    margin-left: 10rpx;
+}
+.to-submit-article-button {
+    color: #ffffff;
+    background-color: #66cccc;
+    padding: 5rpx 20rpx;
+    border-radius: 40rpx;
+    font-size: 26rpx;
+}
+.to-submit-area {
+    font-size: 30rpx;
+    font-weight: 500;
 }
 .top-cancel-submit-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 20rpx;
+    margin: 20rpx 10rpx 10rpx 10rpx;
+    font-size: 34rpx;
+    border-bottom: 1rpx solid #66cccc;
+    padding-bottom: 10rpx;
 }
-.top-cancel-submit-container .words {
-    font-weight: bold;
+.submit-area-container {
+    display: flex;
+    justify-content: space-between;
 }
 .submit-area-container, .type-words-area {
-    margin-top: 20rpx;
+    margin: 20rpx 10rpx;
+}
+.submit-area-container .for-more {
+    color: #999999;
+    font-size: 24rpx;
+}
+.for-more {
+    margin-right: 20rpx;
+}
+.zhichang-pua-words {
+    border: 1px solid #66cccc;
+    color: #66cccc;
+    border-radius: 30rpx;
+    font-size: 24rpx;
+    padding: 3rpx 15rpx;
 }
 .type-words-area {
     height: 440rpx;
@@ -19,36 +51,56 @@
 .type-words-area textarea {
     width: 100%;
 }
+.mood-value-container {
+    color: #66cccc;
+}
 .mood-value-text {
-    color: #08069b;
+    margin: 0 10rpx;
     display: flex;
     justify-content: space-between;
+}
+.display-area {
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 20rpx;
+    margin: 20rpx 10rpx;
+    border: 1px dotted #919191;
+    padding: 10rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .img-choose {
     width: 80rpx;
     height: 80rpx;
-    margin-top: 20rpx;
-    border: 1px dotted #919191;
-    padding: 20rpx;
 }
 .value-to-check {
     color: #919191;
 }
 .body-bottom {
     position: fixed;
-    bottom: 15rpx;
-    height: 30rpx;
+    height: 80rpx;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 10rpx 5rpx;
+    border: 1px solid #66cccc;
+    padding-top: 10rpx;
 }
 .body-bottom view {
     width: 100rpx;
-    background-color: #929191;
-    color: #ffffff;
+    color: #999999;
     line-height: 30rpx;
     text-align: center;
-    padding: 10rpx 20rpx;
     height: 30rpx;
+    font-size: 24rpx;
+}
+.body-bottom .current-page {
+    color: #66cccc;
+}
+.body-bottom .tosubmit-smt-icon {
+    width: 40rpx;
+    height: 40rpx;
+    background-color: #66cccc;
+    border: 20rpx;
 }

@@ -53,7 +53,6 @@ Page({
         })
     },
     getUserInfo(e) {
-        console.log('----e', e.detail.userInfo);
         this.setData({
             username: e.detail.userInfo,
             hasUserInfo: true

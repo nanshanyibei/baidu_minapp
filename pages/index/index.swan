@@ -10,15 +10,16 @@
     </view>
     <view class="body-content">
         <view class="top-content-more">
-            <view>推荐话题</view>
-            <view>更多</view>
+            <view class="top-content-pick-topic">推荐话题</view>
+            <view class="top-content-for-more">更多</view>
         </view>
         <view class="toptic-container">
             <view s-for="topicElement,index in topics" class="topic-container">
-                <view>{{topicElement.topicItem}}</view>
-                <view>{{topicElement.persons}}人次参与</view>
+                <view class="topic-container-item">{{topicElement.topicItem}}</view>
+                <view class="topic-container-persons">{{topicElement.persons}}人次参与</view>
             </view>
         </view>
+        <view class="to-pick-content">推荐内容</view>
         <view class="topic-content-container" s-for="persontElement,index in personList">
             <view class="pic-name-guanzhu">
                 <view class="picture-name">
@@ -40,7 +41,7 @@
                 {{persontElement.topicConent}}
             </view>
             <view>
-                如果有图片这里是图片的列表
+                <image src="" mode="widthFix" binderror="" bindload=""></image>
             </view>
             <view class="function-are">
                 <view class="function-area-element" bindtap="openShare">
@@ -60,19 +61,44 @@
                     <view>踩</view>
                 </view>
             </view>
-            <view>
-                <text class="comment-name">{{persontElement.comments[0].name}}:</text>
+            <view class="genuis-comment">
+                <text class="comment-name">{{persontElement.comments[0].name}}：</text>
                 {{persontElement.comments[0].content}}
             </view>
         </view>
     </view>
     <view class="body-bottom">
         <!-- <bottom-cards> -->
-        <view>社区</view>
-        <view>关注</view>
-        <view bindtap="toSubmit">+</view>
-        <view bindtap="toMessage">消息</view>
-        <view bindtap="toMyPage">我的</view>
+        <view>
+            <smt-icon size="40rpx" name="home" color="#66cccc" />
+            <view class="current-page">
+                社区
+            </view>
+        </view>
+        <view>
+            <smt-icon size="40rpx" name="volunteer" color="#000000" />
+            <view>
+                关注
+            </view>
+        </view>
+        <view bindtap="toSubmit">
+            <smt-icon size="40rpx" name="comment-editor" color="#000000" />
+            <view>
+                发布
+            </view>
+        </view>
+        <view bindtap="toMessage">
+            <smt-icon size="40rpx" name="bell" color="#000000" />
+            <view>
+                消息
+            </view>
+        </view>
+        <view bindtap="toMyPage">
+            <smt-icon size="40rpx" name="personal-center" color="#000000" />
+            <view>
+                我的
+            </view>
+        </view>
         <!-- </bottom-cards> -->
     </view>
 </view>

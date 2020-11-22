@@ -1,12 +1,15 @@
 <view class="my-page-container">
     <view class="top-cancel-submit-container">
-        <view bindtap="toIndex">取消</view>
+        <view class="to-index-page-button" bindtap="toIndex"><</view>
         <view class="words">发布动态</view>
-        <view bindtap="uploadFile">发布</view>
+        <view class="to-submit-article-button" bindtap="uploadFile">发布</view>
     </view>
     <view class="submit-area-container">
-        <text>发布选区：</text>
-        <text>TEST</text>
+        <view>
+            <text class="to-submit-area">发布选区：</text>
+            <text class="zhichang-pua-words">职场PUA</text>
+        </view>
+        <view class="for-more">更多</view>
     </view>
     <view class="type-words-area">
         <textarea
@@ -38,11 +41,36 @@
     </view>
     <view class="body-bottom">
         <!-- <bottom-cards> -->
-        <view bindtap="toIndex">社区</view>
-        <view>关注</view>
-        <view>+</view>
-        <view bindtap="toMessage">消息</view>
-        <view bindtap="toMyPage">我的</view>
+        <view bindtap="toIndex">
+            <smt-icon size="40rpx" name="home" color="#000000" />
+            <view>
+                社区
+            </view>
+        </view>
+        <view>
+            <smt-icon size="40rpx" name="volunteer" color="#000000" />
+            <view>
+                关注
+            </view>
+        </view>
+        <view>
+            <smt-icon size="40rpx" name="comment-editor" color="#66cccc" />
+            <view class="current-page">
+                发布
+            </view>
+        </view>
+        <view bindtap="toMessage">
+            <smt-icon size="40rpx" name="bell" color="#000000" />
+            <view>
+                消息
+            </view>
+        </view>
+        <view bindtap="toMyPage">
+            <smt-icon size="40rpx" name="personal-center" color="#000000" />
+            <view>
+                我的
+            </view>
+        </view>
         <!-- </bottom-cards> -->
     </view>
 </view>

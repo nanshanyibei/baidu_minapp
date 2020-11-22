@@ -16,7 +16,7 @@ const TOPICS = [
 const PERSON_LIST = [
     {
         name: '王语嫣',
-        time: '5月14号',
+        time: '05-14',
         topicConent: '把赛事赛程的子页面补充上文档里面表明子页面是上海团队负责做的部分客户端不用管',
         comments: [
             {

@@ -15,19 +15,19 @@
         </view>
         <view class="power-container-icons">
             <view class="my-tiez">
-                <smt-icon name="directory" class="smt-icon-left" color="#929191" size="90rpx" />
+                <view class="my-tiez-round"></view>
                 <view>我的帖子</view>
             </view>
             <view class="my-tiez">
-                <smt-icon name="comment" class="smt-icon-left" color="#929191" size="90rpx" />
+                <view class="my-tiez-round"></view>
                 <view>我的回复</view>
             </view>
             <view class="my-tiez">
-                <smt-icon name="like" class="smt-icon-left" color="#929191" size="90rpx" />
+                <view class="my-tiez-round"></view>
                 <view>我的点赞</view>
             </view>
             <view class="my-tiez">
-                <smt-icon name="novel" class="smt-icon-test" color="#929191" size="90rpx" />
+                <view class="my-tiez-round"></view>
                 <view>正能量小测</view>
             </view>
         </view>
@@ -35,20 +35,53 @@
     <view class="setting-area-container">
         <view class="setting-element-container">
             <view>我的设置</view>
-            <smt-icon name="arrow" class="smt-icon-test" color="#929191" size="30rpx" />
+            <smt-icon name="arrow" class="smt-icon-test" color="#929191" size="20rpx" />
+        </view>
+        <view class="setting-element-container">
+            <view>话题中心</view>
+            <smt-icon name="arrow" class="smt-icon-test" color="#929191" size="20rpx" />
         </view>
         <view class="setting-element-container">
             <view>社区规则</view>
-            <smt-icon name="arrow" class="smt-icon-test" color="#929191" size="30rpx" />
+            <smt-icon name="arrow" class="smt-icon-test" color="#929191" size="20rpx" />
+        </view>
+        <view class="setting-element-container">
+            <view>版本更新</view>
+            <smt-icon name="arrow" class="smt-icon-test" color="#929191" size="20rpx" />
         </view>
     </view>
     <view class="body-bottom">
         <!-- <bottom-cards> -->
-        <view bindtap="toIndex">社区</view>
-        <view>关注</view>
-        <view bindtap="toSubmit">+</view>
-        <view bindtap="toMessage">消息</view>
-        <view open-type="getUserInfo" bindtap="getUserInfo">我的</view>
+        <view bindtap="toIndex">
+            <smt-icon size="40rpx" name="home" color="#000000" />
+            <view>
+                社区
+            </view>
+        </view>
+        <view>
+            <smt-icon size="40rpx" name="volunteer" color="#000000" />
+            <view>
+                关注
+            </view>
+        </view>
+        <view bindtap="toSubmit">
+            <smt-icon size="40rpx" name="comment-editor" color="#000000" />
+            <view>
+                发布
+            </view>
+        </view>
+        <view bindtap="toMessage">
+            <smt-icon size="40rpx" name="bell" color="#000000" />
+            <view>
+                消息
+            </view>
+        </view>
+        <view>
+            <smt-icon size="40rpx" name="personal-center" color="#66cccc" />
+            <view class="current-page">
+                我的
+            </view>
+        </view>
         <!-- </bottom-cards> -->
     </view>
 </view>
