@@ -67,7 +67,7 @@
             </view>
         </view>
     </view>
-    <view class="body-bottom">
+    <view class="body-bottom swan-security-margin-bottom">
         <!-- <bottom-cards> -->
         <view>
             <smt-icon size="40rpx" name="home" color="#66cccc" />

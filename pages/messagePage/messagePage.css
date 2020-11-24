@@ -10,7 +10,7 @@
     width: 80rpx;
     height: 80rpx;
     border-radius: 40rpx;
-    background-color: #ffcccc;
+    background-color: #66cccc;
     margin-right: 10rpx;
 }
 .message-element-container {
@@ -19,6 +19,13 @@
     margin-top: 20rpx;
     border-bottom: 1rpx solid #919191;
     padding-bottom: 10rpx;
+}
+.icon-element-container {
+    color: #66cccc;
+    font-size: 28rpx;
+}
+.message-list-container {
+    margin: 10rpx;
 }
 .name-value-container {
     font-size: 28rpx;
@@ -36,6 +43,7 @@
     width: 100%;
     border: 1px solid #66cccc;
     padding-top: 10rpx;
+    background-color: #ffffff;
 }
 .body-bottom view {
     width: 100rpx;

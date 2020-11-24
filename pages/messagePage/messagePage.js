@@ -2,14 +2,14 @@ const app = getApp();
 const MESSAGE_LIST = [
     {
         image: 'https://b.bdstatic.com/searchbox/icms/searchbox/img/plus.png',
-        name: '贴吧本地通',
+        name: '本地通',
         value: '当前城市竞争力报告！',
         date: '10-23'
     },
     {
         image: 'https://b.bdstatic.com/searchbox/icms/searchbox/img/plus.png',
-        name: '贴吧本地通',
-        value: '当前城市竞争力报告！',
+        name: '按钮测试',
+        value: '按钮测试文字！',
         date: '10-12'
     }
 ]

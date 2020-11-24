@@ -50,7 +50,7 @@
             <smt-icon name="arrow" class="smt-icon-test" color="#929191" size="20rpx" />
         </view>
     </view>
-    <view class="body-bottom">
+    <view class="body-bottom swan-security-margin-bottom">
         <!-- <bottom-cards> -->
         <view bindtap="toIndex">
             <smt-icon size="40rpx" name="home" color="#000000" />

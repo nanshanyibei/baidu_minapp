@@ -2,7 +2,20 @@
     <view class="submit-area-container">
         <view>
             <text class="to-submit-area">发布选区：</text>
-            <text class="zhichang-pua-words">职场PUA</text>
+            <text
+                bindtap="bindClickType"
+                data-idx="{{0}}"
+                class="zhichang-pua-words {{clickValue===0?'click-pua-words':''}}"
+            >
+                加油打工人
+            </text>
+            <text
+                bindtap="bindClickType"
+                data-idx="{{1}}"
+                class="zhichang-pua-words {{clickValue===1?'click-pua-words':''}}"
+            >
+                职场深水区
+            </text>
         </view>
         <view class="to-submit-article-button" bindtap="uploadFile">发布</view>
     </view>
@@ -34,7 +47,7 @@
             </view>
         </view>
     </view>
-    <view class="body-bottom">
+    <view class="body-bottom swan-security-margin-bottom">
         <!-- <bottom-cards> -->
         <view bindtap="toIndex">
             <smt-icon size="40rpx" name="home" color="#000000" />

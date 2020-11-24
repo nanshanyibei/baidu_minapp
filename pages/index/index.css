@@ -18,6 +18,7 @@
 }
 .body-content {
     border-top: 1px solid #929191;
+    margin-bottom: 100rpx;
 }
 .top-content-more {
     display: flex;
@@ -132,6 +133,7 @@
     width: 100%;
     border: 1px solid #66cccc;
     padding-top: 10rpx;
+    background-color: #ffffff;
 }
 .body-bottom view {
     width: 100rpx;

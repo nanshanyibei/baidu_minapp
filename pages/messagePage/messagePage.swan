@@ -1,19 +1,19 @@
 <view class="my-page-container">
     <view class="icon-container">
         <view class="icon-element-container">
-            <smt-icon name="directory" class="smt-icon-left" color="#929191" size="70rpx" />
+            <smt-icon name="directory" class="smt-icon-left" color="#66cccc" size="60rpx" />
             <view>待定</view>
         </view>
         <view class="icon-element-container">
-            <smt-icon name="like" class="smt-icon-left" color="#929191" size="70rpx" />
+            <smt-icon name="like" class="smt-icon-left" color="#66cccc" size="60rpx" />
             <view>点赞</view>
         </view>
         <view class="icon-element-container">
-            <smt-icon name="message" class="smt-icon-left" color="#929191" size="70rpx" />
+            <smt-icon name="message" class="smt-icon-left" color="#66cccc" size="60rpx" />
             <view>回复</view>
         </view>
         <view class="icon-element-container">
-            <smt-icon name="administrator" class="smt-icon-left" color="#929191" size="70rpx" />
+            <smt-icon name="administrator" class="smt-icon-left" color="#66cccc" size="60rpx" />
             <view>粉丝</view>
         </view>
     </view>
@@ -26,7 +26,7 @@
             </view>
         </view>
     </view>
-    <view class="body-bottom">
+    <view class="body-bottom swan-security-margin-bottom">
         <!-- <bottom-cards> -->
         <view bindtap="toIndex">
             <smt-icon size="40rpx" name="home" color="#000000" />

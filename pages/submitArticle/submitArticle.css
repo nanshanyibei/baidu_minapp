@@ -28,11 +28,17 @@
     margin-right: 20rpx;
 }
 .zhichang-pua-words {
-    border: 1px solid #66cccc;
-    color: #66cccc;
+    border: 1px solid #999999;
+    color: #999999;
     border-radius: 30rpx;
     font-size: 24rpx;
     padding: 3rpx 15rpx;
+    margin-left: 10rpx;
+    display: inline-block;
+}
+.click-pua-words {
+    border-color: #66cccc;
+    color: #66cccc;
 }
 .type-words-area {
     height: 440rpx;
@@ -75,6 +81,7 @@
     width: 100%;
     border: 1px solid #66cccc;
     padding-top: 10rpx;
+    background-color: #ffffff;
 }
 .body-bottom view {
     width: 100rpx;

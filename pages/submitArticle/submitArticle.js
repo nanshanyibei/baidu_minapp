@@ -10,7 +10,8 @@ Page({
     data: {
         userMessage: USER_MESSAGE,
         moodValue: 0.6,
-        inputValue: ''
+        inputValue: '',
+        clickValue: 0
     },
     onLoad: function () {
         // 监听页面加载的生命周期函数
@@ -41,6 +42,11 @@ Page({
             inputValue: e.detail.value
         })
     },
+    bindClickType(e) {
+        this.setData({
+            clickValue: e.currentTarget.dataset.idx
+        })
+    },
     toIndex() {
         swan.navigateTo({
             url: '/pages/index/index'
@@ -69,7 +75,6 @@ Page({
                 icon: 'none'
             });
         }
-        console.log('----发布信息')
         swan.uploadFile({
             url: 'https://xxxx', // 仅为示例，并非真实的接口地址
             filePath,
