@@ -1,5 +1,5 @@
 <!-- index.swan -->
-<view class="container">
+<view class="container swan-security-padding-bottom">
     <view class="body-top">
         <view class="cherp-up {{isCherp ? 'click-style' : ''}}" bindtap="cherpUp">
             加油，打工人
@@ -35,7 +35,7 @@
                         <view>{{persontElement.time}}</view>
                     </view>
                 </view>
-                <view class="guanzhu">+ 关注</view>
+                <view class="guanzhu" bindtap="addGuanZhu">+ 关注</view>
             </view>
             <view class="toptic-content">
                 {{persontElement.topicConent}}
@@ -67,7 +67,7 @@
             </view>
         </view>
     </view>
-    <view class="body-bottom swan-security-margin-bottom">
+    <view class="body-bottom">
         <!-- <bottom-cards> -->
         <view>
             <smt-icon size="40rpx" name="home" color="#66cccc" />

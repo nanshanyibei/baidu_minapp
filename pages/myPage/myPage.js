@@ -57,5 +57,8 @@ Page({
             username: e.detail.userInfo,
             hasUserInfo: true
         });
+    },
+    toLogin() {
+        console.log('-----toLogin');
     }
 });

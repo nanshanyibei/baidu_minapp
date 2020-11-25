@@ -47,7 +47,7 @@
             </view>
         </view>
     </view>
-    <view class="body-bottom swan-security-margin-bottom">
+    <view class="body-bottom swan-security-padding-bottom">
         <!-- <bottom-cards> -->
         <view bindtap="toIndex">
             <smt-icon size="40rpx" name="home" color="#000000" />

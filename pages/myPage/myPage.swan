@@ -1,6 +1,6 @@
 <view class="my-page-container">
     <view class="user-name-guanzhu-container">
-        <image src="" class="name-image" mode="widthFix" binderror="" bindload=""></image>
+        <view class="name-image" bindtap="toLogin"></view>
         <view class="name-guanzhu-container">
             <view class="username-words">{{username}}</view>
             <view class="guanzhu-fans">
@@ -50,7 +50,7 @@
             <smt-icon name="arrow" class="smt-icon-test" color="#929191" size="20rpx" />
         </view>
     </view>
-    <view class="body-bottom swan-security-margin-bottom">
+    <view class="body-bottom swan-security-padding-bottom">
         <!-- <bottom-cards> -->
         <view bindtap="toIndex">
             <smt-icon size="40rpx" name="home" color="#000000" />

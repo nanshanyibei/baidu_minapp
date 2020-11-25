@@ -13,39 +13,42 @@ const TOPICS = [
         persons: 4857
     }
 ];
-const PERSON_LIST = [
-    {
-        name: '王语嫣',
-        time: '05-14',
-        topicConent: '把赛事赛程的子页面补充上文档里面表明子页面是上海团队负责做的部分客户端不用管',
-        comments: [
-            {
-                name: '周伯通',
-                content: '如果是墙外节奏，动态列表里面有翻墙啊技术开发就卡了上飞机萨克雷放假撒'
-            }
-        ]
-    },
-    {
-        name: '王语嫣',
-        time: '05-14',
-        topicConent: '把赛事赛程的子页面补充上文档里面表明子页面是上海团队负责做的部分客户端不用管',
-        comments: [
-            {
-                name: '周伯通',
-                content: '如果是墙外节奏，动态列表里面有翻墙啊技术开发就卡了上飞机萨克雷放假撒'
-            }
-        ]
-    }
-]
 
 Page({
     data: {
         isCherp: true,
         topics: TOPICS,
-        personList: PERSON_LIST
+        personList: []
     },
     onLoad() {
         
+    },
+    onReady: function() {
+        swan.request({
+            url: 'https://tiancong.club/postListByAllUser',
+            method: 'GET',
+            data: {
+                user_id: 1013
+            },
+            success: res => {
+                let articleList = [];
+                res.data.map(ele => {
+                    const {id, author, content, date} = ele;
+                    let articleListElement = {};
+                    articleListElement.name = author;
+                    articleListElement.time = `${(new Date(date).getMonth() + 1 + '')}-${new Date(date).getDate()}`;
+                    articleListElement.topicConent = content;
+                    articleListElement.comments = [{
+                        name: '122',
+                        content: '123123'
+                    }];
+                    articleList.push(articleListElement);
+                });
+                this.setData({
+                    personList: articleList
+                })
+            }
+        })
     },
     cherpUp() {
         this.setData({
@@ -66,6 +69,9 @@ Page({
         swan.navigateTo({
             url: '/pages/submitArticle/submitArticle'
         })
+    },
+    addGuanZhu() {
+        console.log('---1111');
     },
     toMessage() {
         swan.navigateTo({

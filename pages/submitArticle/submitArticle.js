@@ -68,40 +68,18 @@ Page({
         });
     },
     uploadFile() {
-        const filePath = this.getData('filePath');
-        if (!filePath) {
-            swan.showToast({
-                title: '请先上传图片',
-                icon: 'none'
-            });
-        }
-        swan.uploadFile({
-            url: 'https://xxxx', // 仅为示例，并非真实的接口地址
-            filePath,
-            name: 'myfile',
-            header: {
-                'content-type': 'multipart/form-data'
-            },
-            formData: {
-                'user': 'test'
+        swan.request({
+            url: 'https://tiancong.club/addPost',
+            method: 'POST',
+            data: {
+                addPostContent: this.data.inputValue,
+                addImgUrl: 'test.cn',
+                energy: 10
             },
             success: res => {
-                swan.showToast({
-                    title: '上传成功',
-                    icon: 'none'
-                });
-                console.log('uploadFile success', res);
-                this.setData({filePath});
-            },
-            fail: err => {
-                console.log('uploadFile fail', err);
-                swan.showToast({
-                    title: '上传失败',
-                    icon: 'none'
-                });
-                this.toIndex();
+                console.log('---res', res);
             }
-        }); 
+        })
     },
     toMessage() {
         swan.navigateTo({
