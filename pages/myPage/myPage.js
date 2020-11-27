@@ -69,6 +69,18 @@ Page({
             },
             success: res => {
                 swan.setStorageSync('cookie', res.header['Set-Cookie']);
+                swan.showToast({
+                    title: '恭喜你登录成功',
+                    mask: false,
+                    success: res => {
+                        setTimeout(() => {
+                            this.toIndex();
+                        }, 2000);
+                    },
+                    fail: err => {
+                        console.log('showToast fail', err);
+                    }
+                });
             }
         })
     }

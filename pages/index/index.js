@@ -43,6 +43,7 @@ Page({
                         content: '123123'
                     }];
                     articleListElement.postId = id;
+                    articleListElement.pic = Math.floor(Math.random() * 4);
                     articleList.push(articleListElement);
                 });
                 this.setData({

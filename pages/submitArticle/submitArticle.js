@@ -99,10 +99,12 @@ Page({
             success: res => {
                 if (res.data.errorCode === '0') {
                     swan.showToast({
-                        title: res.data.errorMessage,
+                        title: '恭喜你发布成功',
                         mask: false,
                         success: res => {
-                            this.toIndex();
+                            setTimeout(() => {
+                                this.toIndex();
+                            }, 2000);
                         },
                         fail: err => {
                             console.log('showToast fail', err);

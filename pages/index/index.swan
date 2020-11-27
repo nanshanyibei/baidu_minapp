@@ -1,5 +1,5 @@
 <!-- index.swan -->
-<view class="container swan-security-padding-bottom">
+<view class="container">
     <view class="body-top">
         <view class="cherp-up {{isCherp ? 'click-style' : ''}}" bindtap="cherpUp">
             加油，打工人
@@ -8,7 +8,7 @@
             职场深水区
         </view>
     </view>
-    <view class="body-content">
+    <view class="body-content swan-security-padding-bottom">
         <view class="top-content-more">
             <view class="top-content-pick-topic">推荐话题</view>
             <view class="top-content-for-more">更多</view>
@@ -41,7 +41,10 @@
                 {{persontElement.topicConent}}
             </view>
             <view>
-                <image src="" mode="widthFix" binderror="" bindload=""></image>
+                <image s-if="persontElement.pic === 0" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606500803830&di=f8edd89d3136bc87ff33eb1d2f4a2b50&imgtype=0&src=http%3A%2F%2Fcdn.duitang.com%2Fuploads%2Fitem%2F201508%2F28%2F20150828205316_v5sZR.thumb.700_0.jpeg" mode="widthFix" binderror="" bindload=""></image>
+                <image s-if="persontElement.pic === 1" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=133739456,2748358546&fm=26&gp=0.jpg" mode="widthFix" binderror="" bindload=""></image>
+                <image s-if="persontElement.pic === 2" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606500958924&di=c73adf2265627979627ae18995926a3c&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fa8b3e804b8b1fec7359a8aa9e1cf9e6fdd8ba40949a8-tJ6BlB_fw658" mode="widthFix" binderror="" bindload=""></image>
+                <image s-if="persontElement.pic === 3" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606501003953&di=1a67857611973f2fc199dbd5eed2ab4e&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201411%2F18%2F20141118225558_zxufd.thumb.700_0.jpeg" mode="widthFix" binderror="" bindload=""></image>
             </view>
             <view class="function-are">
                 <view class="function-area-element" bindtap="openShare">
@@ -67,7 +70,7 @@
             </view>
         </view>
     </view>
-    <view class="body-bottom">
+    <view class="body-bottom swan-security-padding-bottom">
         <!-- <bottom-cards> -->
         <view>
             <smt-icon size="40rpx" name="home" color="#66cccc" />
