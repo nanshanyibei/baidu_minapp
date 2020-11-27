@@ -1,0 +1,34 @@
+.comment-page-input {
+    margin: 10rpx;
+}
+.comment-page-input-element {
+    height: 60rpx;
+}
+.body-bottom {
+    position: fixed;
+    height: 80rpx;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid #66cccc;
+    padding-top: 10rpx;
+    background-color: #ffffff;
+}
+.body-bottom view {
+    width: 100rpx;
+    color: #999999;
+    line-height: 30rpx;
+    text-align: center;
+    height: 30rpx;
+    font-size: 24rpx;
+}
+.body-bottom .current-page {
+    color: #66cccc;
+}
+.body-bottom .tosubmit-smt-icon {
+    width: 40rpx;
+    height: 40rpx;
+    background-color: #66cccc;
+    border: 20rpx;
+}

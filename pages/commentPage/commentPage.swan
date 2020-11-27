@@ -1,0 +1,50 @@
+<view class="my-page-container">
+    <view class="comment-page-input">
+        <input
+            class="comment-page-input-element"
+            value=""
+            type="text"
+            placeholder="请输入你的评论"
+            disabled="false"
+            maxlength="140"
+            auto-focus="false"
+            focus="false"
+            bindchange="inputChange">
+        </input>
+    </view>
+    <button class="comment-button" size="default" type="default" bindtap="toSubmitComment">提交评论</button>
+    <view class="body-bottom swan-security-padding-bottom">
+        <!-- <bottom-cards> -->
+        <view bindtap="toIndex">
+            <smt-icon size="40rpx" name="home" color="#000000" />
+            <view>
+                社区
+            </view>
+        </view>
+        <view>
+            <smt-icon size="40rpx" name="volunteer" color="#000000" />
+            <view>
+                关注
+            </view>
+        </view>
+        <view bindtap="toSubmit">
+            <smt-icon size="40rpx" name="comment-editor" color="#000000" />
+            <view>
+                发布
+            </view>
+        </view>
+        <view>
+            <smt-icon size="40rpx" name="bell" color="#000000" />
+            <view class="current-page">
+                消息
+            </view>
+        </view>
+        <view bindtap="toMyPage">
+            <smt-icon size="40rpx" name="personal-center" color="#000000" />
+            <view>
+                我的
+            </view>
+        </view>
+        <!-- </bottom-cards> -->
+    </view>
+</view>

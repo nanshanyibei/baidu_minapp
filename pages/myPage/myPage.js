@@ -4,7 +4,8 @@ const USER_MESSAGE = {
     guanzhu: 200,
     fans: 100,
     power: 200
-}
+};
+const telPersons = [18069864670, 18000001111];
 
 Page({
     data: {
@@ -59,6 +60,16 @@ Page({
         });
     },
     toLogin() {
-        console.log('-----toLogin');
+        swan.request({
+            url: 'https://tiancong.club/login',
+            method: 'GET',
+            data: {
+                tel: telPersons[Math.random > 0.5 ? 0: 1],
+                password: '123456'
+            },
+            success: res => {
+                swan.setStorageSync('cookie', res.header['Set-Cookie']);
+            }
+        })
     }
 });

@@ -48,7 +48,7 @@
                     <smt-icon name="share" class="smt-icon-left" color="#929191" size="34rpx" />
                     <view>转发</view>
                 </view>
-                <view class="function-area-element">
+                <view class="function-area-element" bindtap="toComment" data-postId='{{persontElement.postId}}'>
                     <smt-icon name="message" class="smt-icon-left" color="#929191" size="34rpx" />
                     <view>评论</view>
                 </view>

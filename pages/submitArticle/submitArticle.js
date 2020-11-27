@@ -41,6 +41,20 @@ Page({
         this.setData({
             inputValue: e.detail.value
         })
+        swan.request({
+            url: 'https://tiancong.club/getEnergy',
+            method: 'GET',
+            header: {
+                'content-type': 'application/x-www-form-urlencoded',
+                'cookie': swan.getStorageSync("cookie")
+            },
+            data: {
+                words: e.detail.value
+            },
+            success: res => {
+                console.log('---res', res);
+            }
+        })
     },
     bindClickType(e) {
         this.setData({
@@ -70,14 +84,29 @@ Page({
     uploadFile() {
         swan.request({
             url: 'https://tiancong.club/addPost',
-            method: 'POST',
+            method: 'GET',
+            header: {
+                'content-type': 'application/x-www-form-urlencoded',
+                'cookie': swan.getStorageSync("cookie")
+            },
             data: {
                 addPostContent: this.data.inputValue,
                 addImgUrl: 'test.cn',
                 energy: 10
             },
             success: res => {
-                console.log('---res', res);
+                if (res.data.errorCode === '0') {
+                    swan.showToast({
+                        title: res.data.errorMessage,
+                        mask: false,
+                        success: res => {
+                            this.toIndex();
+                        },
+                        fail: err => {
+                            console.log('showToast fail', err);
+                        }
+                    });
+                }
             }
         })
     },

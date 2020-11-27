@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "回帖",
+    "usingComponents": {
+        "smt-icon": "dynamicLib://smartUI/smt-icon"
+    }
+}

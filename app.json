@@ -3,7 +3,8 @@
         "pages/index/index",
         "pages/myPage/myPage",
         "pages/submitArticle/submitArticle",
-        "pages/messagePage/messagePage"
+        "pages/messagePage/messagePage",
+        "pages/commentPage/commentPage"
     ],
     "window": {
         "navigationBarBackgroundColor": "#ffffff",

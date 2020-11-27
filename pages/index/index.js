@@ -42,6 +42,7 @@ Page({
                         name: '122',
                         content: '123123'
                     }];
+                    articleListElement.postId = id;
                     articleList.push(articleListElement);
                 });
                 this.setData({
@@ -95,5 +96,10 @@ Page({
                 console.log('openShare fail', err);
             }
         });
+    },
+    toComment(e) {
+        swan.navigateTo({
+            url: `/pages/commentPage/commentPage?id=${e.currentTarget.dataset.postId}`
+        })
     }
 })
