@@ -9,7 +9,7 @@ const USER_MESSAGE = {
 Page({
     data: {
         userMessage: USER_MESSAGE,
-        moodValue: 0.6,
+        moodValue: 0.0,
         inputValue: '',
         clickValue: 0
     },
@@ -52,7 +52,9 @@ Page({
                 words: e.detail.value
             },
             success: res => {
-                console.log('---res', res);
+                this.setData({
+                    moodValue: res.data
+                })
             }
         })
     },
@@ -92,7 +94,7 @@ Page({
             data: {
                 addPostContent: this.data.inputValue,
                 addImgUrl: 'test.cn',
-                energy: 10
+                energy: this.data.moodValue
             },
             success: res => {
                 if (res.data.errorCode === '0') {
